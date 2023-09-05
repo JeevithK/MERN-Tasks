@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <title>Task 11</title>
+        <style>
+            body
+            {
+                margin-top: 100px;
+                margin-left: 100px;
+            }
+            .parent
+            {
+                border-style: solid;
+                border-color: black;
+                border-width: 2px;
+                background-color:rgb(171, 7, 171);
+                display: inline-block;
+                border:none;
+            }
+            .child
+            {
+                height: 230px;
+                width: 430px;
+                /* text-align: center; */
+                vertical-align: middle;
+                padding-top: 50px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 100px;
+                margin-right: 100px;
+                background-color:purple;
+                border: none;
+                padding-left: 60px;
+            }
+            .savebutton
+            {
+                width: 83%;
+                padding-bottom: 5px;
+                padding-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child">
+                <form action="form"></form>
+                <label for="fullname">Full Name:&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                <input type="text" name="fullname" placeholder="Enter Name">
+                <br>
+                <label for="Username">Username:&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                <input type="text" name="username" placeholder="Enter Valid Username">
+                <br>
+                <label for="password">PassWord:&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                <input type="password" name="password">
+                <br>
+                <label for="password">Phone Number:&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;</label>
+                <input type="password" name="password">
+                <br>
+                <label for="gender" >Gender:&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                <label for="gender" >Male:</label>
+                <input type="radio" name="gender">
+                <label for="gender" >Female:</label>
+                <input type="radio" name="gender">
+                <label for="gender" >Others:</label>
+                <input type="radio" name="gender">
+                <br>
+                <label for="gender">Language:&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                <select name="gender" id="gender">
+                    <option value="Tamil">Tamil</option>
+                    <option value="English">English</option>
+                    <option value="korean">Korean</option>
+                    <option value="japanese">japanese</option>
+                </select>
+                <br>
+                <label for="address">Address:&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                <input type="text" name="address" placeholder="Enter Address" >
+                <br>
+                <label for="fullname">Age:&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;</label>
+                <input type="number" name="age" placeholder="Enter the Age">
+                <br>
+                
+                <br>
+                <button class="savebutton">Register</button>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

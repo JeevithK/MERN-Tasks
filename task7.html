@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <title>Task 7</title>
+        <style>
+            body
+            {
+                margin-top: 100px;
+                margin-left: 100px;
+            }
+            .navbar
+            {
+               border: none;
+                width: 200px;
+                height: 210px;
+                margin:7px;
+                display: inline-block;
+            }
+            .verti
+            {
+                border-style: solid;
+                border-color: black;
+                display: inline-block ;
+                margin-right: 30px;
+            }
+            .home
+            {
+                background-color: orange;
+                border: none;
+                width: 100%;
+                border: none;
+                height: 40px;
+                margin-bottom: 2px;
+                color: blue;
+                font-family:'Times New Roman', Times, serif;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+            .home:hover
+            {
+                background-color: rgb(234, 153, 5);
+            }
+            .home:active{
+                opacity: 0.8;
+            }
+            .css
+            {
+                background-color: lightblue;
+                border: none;
+                width: 100%;
+                border: none;
+                height: 40px;
+                margin-bottom: 2px;
+                color: blue;
+                font-family:'Times New Roman', Times, serif;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+            .css:hover{
+                background-color: rgb(139, 210, 233);
+            }
+            .java
+            {
+                    background-color: lightblue;
+                    border: none;
+                    width: 100%;
+                border: none;
+                height: 40px;
+                margin-bottom: 2px;
+                color: blue;
+                font-family:'Times New Roman', Times, serif;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+            .java:hover{
+                background-color: rgb(139, 210, 233);
+            }
+            .html
+            {
+                background-color: lightblue;
+                border: none;
+                width: 100%;
+                border: none;
+                height: 40px;
+                margin-bottom: 2px;
+                color: blue;
+                font-family:'Times New Roman', Times, serif;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+            .html:hover{
+                background-color: rgb(139, 210, 233);
+            }
+            .bootstrap
+            {
+                background-color: lightblue;
+                border: none;
+                width: 100%;
+                border: none;
+                height: 40px;
+                margin-bottom: 2px;
+                color: blue;
+                font-family:'Times New Roman', Times, serif;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+            .bootstrap:hover{
+                background-color: rgb(139, 210, 233);
+            }
+            .hordiv
+            {
+                display: inline-block;
+                height: 100%;
+                width: 100px;
+                margin-left: -1px;
+                margin-right: -1px;
+            }
+            .horiz
+            {
+                border-color: black;
+                border-style: solid;
+                border-width: 1px;
+                width: 620px;
+                height: 40px;
+                display: inline-block;
+                padding-top: 18px;
+                padding-bottom: 18px;
+                display: inline-block;
+                padding-left: 2px;
+                text-align: end;
+                margin-top: 0;
+                vertical-align: top;
+            }
+            .horhome
+            {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                margin-left: 9px;
+                margin-right: -1px;
+                border: none;
+                background-color: rgb(169, 168, 168);
+                border-color: blue;
+                border-style: solid;
+                border-width: 0px 2px 0px 0px;
+                display: inline-block;
+            }
+            .horjava
+            {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                margin-left: 7px;
+                margin-right: -1px;
+                border: none;
+                background-color: rgb(224, 223, 223);
+                border-color: blue;
+                border-style: solid;
+                border-width: 0px 2px 0px 0px;
+                display: inline-block;
+            }
+            .horcss
+            {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                margin-left: 5px;
+                margin-right: -1px;
+                border: none;
+                background-color: rgb(224, 223, 223);
+                border-color: blue;
+                border-style: solid;
+                border-width: 0px 2px 0px 0px;
+                display: inline-block;
+            }
+            .horhtml
+            {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                margin-left: 3px;
+                margin-right: -1px;
+                border: none;
+                background-color: rgb(224, 223, 223);
+                border-color: blue;
+                border-style: solid;
+                border-width: 0px 2px 0px 0px;
+                display: inline-block;
+            }
+            .horbootstrap
+            {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                margin-left: 1px;
+                margin-right: -1px;
+                border: none;
+                background-color: rgb(224, 223, 223);
+                border-color: blue;
+                border-style: solid;
+                border-width: 0px 2px 0px 0px;
+                display: inline-block;
+            }
+            .empty
+            {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                margin-left: -1px;
+                margin-right: 1px;
+                border: none;
+                background-color: rgb(224, 223, 223);
+                display: inline-block;
+
+            }
+            .hordef{
+                display: block;
+            }
+            .horzon
+            {
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display:inline-block;">
+            <p>
+                Vertical Navigation Bar
+            </p>
+            <div class="verti">
+                <div class="navbar">
+                    <div >
+                        <button class="home">Home</button>
+                    </div>
+                    <div >
+                        <button class="java">Java</button>
+                    </div>
+                    <div >
+                        <button class="css">Css</button>
+                    </div>
+                    <div >
+                        <button class="html">Html</button>
+                    </div>
+                    <div >
+                        <button class="bootstrap">Bootstrap</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="horzon">
+            <p class="hordef">
+                Horizontal Navigation Bar
+            </p>
+            <div class="horiz">
+            
+                <div class="hordiv">
+                    <button class="horhome">Home</button>
+                </div>
+                <div class="hordiv">
+                    <button class="horjava">Java</button>
+                </div>
+                <div class="hordiv">
+                    <button class="horcss">Css</button>
+                </div>
+                <div class="hordiv">
+                    <button class="horhtml">Html</button>
+                </div>
+                <div class="hordiv">
+                    <button class="horbootstrap">Bootstrap</button>
+                </div>
+                <div class="hordiv">
+                    <button class="empty">empty</button>
+                </div>    
+        </div>
+        </div>
+    </body>
+</html>
