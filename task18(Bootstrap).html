@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container p-4 my-5 bg-light">
+        <form class="needs-validation " novalidate>
+            <div class="fw-bold col-2"> Name </div>
+            <div class="row ">
+                <div class="col input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" basic-addon1 bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                          </svg>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1" required>
+                    <div class="invalid-feedback">Please Supply your Name</div>
+                  </div>
+            </div>
+            <div class="fw-bold col-2"> E-Mail </div>
+            <div class="row ">
+                <div class="col input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" basic-addon1 bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                          </svg>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" required>
+                    <div class="invalid-feedback">Email is Required</div>
+                  </div>
+            </div>
+            <div class="fw-bold col-2"> Password </div>
+            <div class="row ">
+                <div class="col input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" basic-addon1 bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                          </svg>
+                    </span>
+                    <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1" required>
+                    <div class="invalid-feedback">Password is required</div>
+                  </div>
+            </div>
+            <div class="fw-bold col-2"> Hobbies </div>
+            <div class="row ">
+                <div class="col input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" basic-addon1 bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                          </svg>
+                    </span>
+                    <select class="form-select" id="hobbies" name="hobbies">
+                        <option value="reading">Reading</option>
+                        <option value="gardening">Gardening</option>
+                        <option value="cooking">Cooking</option>
+                        <option value="painting">Painting</option>
+                        <option value="sports">Sports</option>
+                        <option value="music">Music</option>
+                        <option value="traveling">Traveling</option>
+                        <option value="photography">Photography</option>
+                        <option value="dancing">Dancing</option>
+                        <option value="programming">Programming</option>
+                    </select>
+                    <div class="invalid-feedback">Hobbies</div>
+                  </div>
+            </div>
+            <div class="row my-5 text-center">
+                    <button type="submit" style="border-color: rgb(244, 168, 28);" class="btn btn-danger text-light   px-3 py-2 ">Save
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                          </svg>
+                    </button>
+                
+            </div>
+        </form>
+    </div>
+    <script>
+        var forms=document.querySelectorAll(".needs-validation");
+        Array.prototype.slice.call(forms).forEach(function(form)
+        {
+            form.addEventListener("submit",function(event)
+            {
+                if(!form.checkValidity())
+                {
+                event.preventDefault();
+                event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+            }
+            ),false;
+            
+        }
+        );
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html> 
