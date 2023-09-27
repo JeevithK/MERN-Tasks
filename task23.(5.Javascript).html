@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JavaScript Task 5</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+
+            table, td, tr {
+                border-spacing: 20px;
+                margin-bottom: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <form class="form" onsubmit="return validate()" >
+        <div style="display: flex;justify-content: center;">
+            <table style="display: flex;justify-content: center;">
+            <tr style="margin-bottom: 100px;">
+              <div>
+              <td><label for="name">Name:</label></td>
+              <td>
+                <div style="display: flex;">
+                    <input required class="name" type="text" name="name" placeholder="Enter your name" />
+                    <p id="name-w" style="color: red;"></p>
+                </div>
+            </td>
+              </div>
+            </tr>
+            <tr>
+              <div>
+              <td><label for="email">Email:</label></td>
+              <td>
+                <div style="display: flex;">
+                    <input required class="email" type="email" name="email" placeholder="Enter your email" />
+                    <p id="email-w" style="color: red;"></p>
+                </div>
+                </td>
+              </div>
+            </tr>
+            <tr>
+              <div>
+              <td><label for="website">Website:</label></td>
+              <td>
+                <div style="display: flex;">
+                <input required class="website" type="url" name="website" placeholder="Enter the website url" />
+                <p id="website-w" style="color: red;"></p>
+                </div>
+                </td>
+              </div>
+            </tr>
+            <tr>
+              <div>
+              <td><label for="message">Message:</label></td>
+              <td>
+                <div style="display: flex;">
+                    <textarea required class="message" type="text" name="message" placeholder="Enter the message"></textarea>
+                    <p id="message-w" style="color: red;"></p>
+                </div>
+            </td>
+              </div>
+            </tr>
+          </table>
+          </div>
+          <div>
+          <center>
+              <button type="submit">Submit</button>
+          </center>
+          </div>
+          </form>
+
+        <script>
+
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var website = document.getElementById("website").value;
+          var message = document.getElementById("message").value;
+
+          function validate() {
+            if (name.length <= 0) {
+                document.getElementById("name-w").innerHTML = "Enter your name";
+                return false;
+            }
+
+            else if (email.length <= 0) {
+                document.getElementById("email-w").innerHTML = "Enter your email";
+                return false;
+            }
+
+            else if (website.length <= 0) {
+                document.getElementById("website-w").innerHTML = "Enter the url";
+                return false;
+            }
+
+            else if (message.length <= 0) {
+                document.getElementById("message-w").innerHTML = "Enter the message";
+                return false;
+            }
+
+            else {
+                return true;
+            }
+          }
+
+        </script>
+    </body>
+</html>

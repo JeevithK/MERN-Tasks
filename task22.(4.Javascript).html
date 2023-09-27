@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date and Time</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aliceblue;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #datetime {
+            font-size: 24px;
+            color: #007BFF;
+            margin-top: 20px;
+        }
+
+        #datetime2 {
+            font-size: 24px;
+            color: #007BFF;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: larger; font-weight: bold;
+        }
+    </style>
+    <script>
+        function datetime() {
+            let currentDateTime = new Date();
+            let date = currentDateTime.toDateString();
+            document.getElementById("datetime").innerHTML = "Date: " + date ;
+        }
+        function datetime2()
+        {
+            let currentDateTime = new Date();
+            let time = currentDateTime.toLocaleTimeString();
+            document.getElementById("datetime2").innerHTML ="Time: " + time+" GMT +0530 (Indian Standard Time)";
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <h1>Current Date and Time</h1>
+    <div >
+        <div style="display: inline-block; margin-bottom: 20px;">
+            <button onclick="datetime();">Show Date</button>
+        </div>
+        
+        <div style="display: inline-block;" id="datetime"></div>
+    </div>
+    <div >
+        <div style="display: inline-block; margin-bottom: 20px;">
+            <button onclick="datetime2();">Show Time</button>
+        </div>
+        
+        <div style="display: inline-block;" id="datetime2"></div>
+    </div>
+    
+</body>
+</html>

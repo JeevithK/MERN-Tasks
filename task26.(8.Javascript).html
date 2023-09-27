@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 22(Javascript)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="task17.css">
+    <style>
+        .col1
+        {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div  class="container my-5 ">
+            <form class="needs-validation" novalidate>
+                <div class="row ">
+                    <div class="fw-bold col-2"> Name </div>
+                    <div class="col input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" basic-addon1 bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                              </svg>
+                        </span>
+                        <input type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1" required>
+                        <div class="col invalid-feedback">POOR</div>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="fw-bold col-2"> Last Name </div>
+                    <div class=" col input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" basic-addon1 bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                              </svg>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1"required>
+                        <div class="col invalid-feedback">POOR</div>
+                      </div>
+                      
+                </div>
+                <div class="row">
+                    <div class="fw-bold col-2">E-mail</div>
+                    <div class=" col input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" basic-addon1 bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                              </svg>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1"required>
+                        <div class="col invalid-feedback">POOR</div>
+                      </div>
+                      
+                </div>
+                <div class="row">
+                    <div class="fw-bold col-2"> Password </div>
+                    <div class="col input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                              </svg>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1"required>
+                        <div class="col invalid-feedback">POOR</div>
+                      </div>
+                      
+                </div>
+                <div class="row mb-2">
+                    <div class="fw-bold col-2">RE-enter Password </div>
+                    <div class="col input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                              </svg>
+                        </span>
+                        <input type="text" class="form-control" placeholder="rePassword" aria-label="rePassword" aria-describedby="basic-addon1"required>
+                        <div class="col invalid-feedback">POOR</div>
+                    </div>
+                      
+                </div>
+                <div class="row">
+                    <div class="fw-bold col-2"> Do You have Hosting ? </div>
+                        <div class="col">
+                            <div >
+                                <input type="radio" id="yesorno" name="yes">
+                                <span>Yes</span>
+                            </div>
+                            <div> <input type="radio" id="yesorno" name="yes"required> 
+                                <span>No</span>
+                            </div>
+                            
+                </div>
+                
+                <div class="row mt-3">
+                    <div class="fw-bold col-2"> Age </div>
+                    <div class="col input-group mb-3 ms-1">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" basic-addon1 bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                              </svg>
+                        </span>
+                        <input type="number" class="form-control" placeholder="age" aria-label="age" aria-describedby="basic-addon1"required>
+                        <div class="col invalid-feedback">POOR</div>
+                      </div>
+                      
+                </div>
+                <div class="row">
+                    <div class="fw-bold col-2">Phone Number </div>
+                    <div class="col input-group mb-3 ms-1">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="basic-addon1 bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                              </svg>
+                        </span>
+                        <input type="text" class="form-control" placeholder="phone" aria-label="phone" aria-describedby="basic-addon1"required>
+                        <div class="col invalid-feedback">POOR</div>
+                      </div>
+                </div>
+                <div class="fw-bold col-2">Address</div>
+                    <div class="col input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"      class="basic-addon1 bi-pen" viewBox="0 0 16 16">
+                                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                                </svg>
+                              
+                            </span>
+                            <textarea type="text" class="form-control" placeholder="Project Description" aria-label="Project Description" aria-describedby="basic-addon1"required></textarea>
+                            <div class="col invalid-feedback">POOR</div>
+                      </div>   
+                </div>
+                <div class="row">
+                    <div class="fw-bold col-2"> State</div>
+                    <div class="col input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="basic-addon1 bi-house-fill" viewBox="0 0 16 16">
+                                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                              </svg>
+                        </span>
+                        <input type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="basic-addon1"required>
+                        <div class="col invalid-feedback">POOR</div>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="fw-bold col-2">Country</div>
+                    <div class="col input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="basic-addon1 bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+                        </span>
+                        <select class="form-select" id="inputState"required>
+                            <option value="SelectState">Select State</option>
+                            <option value="Andra Pradesh">Andra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madya Pradesh">Madya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Orissa">Orissa</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttaranchal">Uttaranchal</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                            <option value="Daman and Diu">Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lakshadeep">Lakshadeep</option>
+                            <option value="Pondicherry">Pondicherry</option>
+                          </select>
+                          <div class="col invalid-feedback">POOR</div>
+                      </div>
+                </div>
+                <div class="row ">
+                    <div class="fw-bold col-2">Language Known</div>
+                    <div class="col-2">
+                        <span>Tamil </span>
+                        <input type="checkbox" name="lang" id="Tamil">
+                    </div>
+                    <div class="col-2">
+                        <span>English </span>
+                        <input type="checkbox" name="lang" id="English">
+                    </div>
+                    <div class="col-2">
+                        <span>Telugu </span>
+                        <input type="checkbox" name="lang" id="Telugu">
+                    </div>
+                    <div class="col-2">
+                        <span>Malayalam </span>
+                        <input type="checkbox" name="lang" id="malayalam">
+                    </div>
+                    <div class="row my-5 text-center">
+                        <div class="col ">
+                            <input type="checkbox" name="declare">
+                            Hereby I declare all the Informations are true
+                        </div>
+                    </div>
+                    <div class="row  text-center">
+                        <div class="col ">
+                            Login to <a href="#">Ethnus</a>Website
+                        </div>
+                    </div>
+                <div class="row my-5 text-center">
+                    <div class="col ">
+                        <button type="submit" style="border-color: rgb(244, 168, 28);" class="btn btn-danger text-light   px-5 py-2 ">Register
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                
+        </div>
+    </div>
+    <script>
+        var forms=document.querySelectorAll(".needs-validation");
+        Array.prototype.slice.call(forms).forEach(function(form)
+        {
+            form.addEventListener("submit",function(event)
+            {
+                if(!form.checkValidity())
+                {
+                event.preventDefault();
+                event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+            }
+            ),false;
+            
+        }
+        );
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

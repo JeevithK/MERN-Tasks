@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task 7</title>
+    <style>
+        #train, img {
+            width: 100px;
+            height: 150px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: left 2s linear;
+            z-index: 1;
+        }
+        #track {
+            width: 100%;
+            height: 10px;
+            background-color: gray;
+            position: absolute;
+            top: 100px;
+            left: 0;
+        }
+
+        #buttons-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        #startButton, #stopButton, h1 {
+            margin: 150px 10px 0px 10px;
+        }
+
+      #startButton, #stopButton {
+        margin-top: 80px;
+      }
+    </style>
+</head>
+<body>
+    <div id="train"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsuOaX67G_tPl4ZkQSgSY86cQ25ctmI1ZTgQ&usqp=CAU" /></div>
+    <div id="track"></div>
+  <center>
+    <h1 style="color: blue;">Click the following buttons to handle animation</h1>
+    <div id="buttons-container">
+        <button id="startButton">Start</button>
+        <button id="stopButton">Stop</button>
+    </div>
+  </center>
+
+    <script>
+        const train = document.getElementById('train');
+        const startButton = document.getElementById('startButton');
+        const stopButton = document.getElementById('stopButton');
+        let isMoving = false;
+        let animationInterval;
+
+        function startAnimation() {
+            if (!isMoving) {
+                isMoving = true;
+                train.style.left = '0';
+                animationInterval = setInterval(moveTrain, 200);
+            }
+        }
+
+        function moveTrain() {
+            const currentPosition = parseFloat(train.style.left) || 0;
+            train.style.left = currentPosition + 10 + 'px';
+        }
+
+        function stopAnimation() {
+            isMoving = false;
+            clearInterval(animationInterval);
+        }
+
+        startButton.addEventListener('click', startAnimation);
+        stopButton.addEventListener('click', stopAnimation);
+    </script>
+</body>
+</html>
